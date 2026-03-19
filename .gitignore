@@ -1,0 +1,32 @@
+# Node & Dependências
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build & Logs (Angular / NestJS)
+dist/
+tmp/
+out-tsc/
+bazel-out/
+.angular/
+coverage/
+*.log
+
+# Variáveis de Ambiente (Segurança)
+.env
+.env.*
+!.env.example
+
+# IDEs & Editores
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS (Windows / macOS)
+.DS_Store
+Thumbs.db
+desktop.ini
