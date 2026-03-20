@@ -1,9 +1,13 @@
 <div class="min-h-screen bg-surface text-on-surface flex font-sans">
   
-  <app-sidebar class="h-screen sticky top-0 z-10"></app-sidebar>
+  <app-sidebar (openModal)="isModalOpen = true" class="h-screen sticky top-0 z-10"></app-sidebar>
 
   <main class="flex-1 p-8 lg:p-12 overflow-y-auto">
     <router-outlet></router-outlet>
   </main>
+
+  @if (isModalOpen) {
+    <app-new-entry-modal (close)="isModalOpen = false"></app-new-entry-modal>
+  }
 
 </div>

@@ -15,7 +15,6 @@
     <div class="mb-14 pl-2 h-10 flex flex-col justify-center overflow-hidden whitespace-nowrap">
       @if (isExpanded) {
         <h1 class="font-serif text-3xl text-primary mb-1 italic tracking-wide">Mandalabits</h1>
-        <p class="font-sans text-[0.65rem] tracking-widest text-outline-variant uppercase">The Ethereal Archive</p>
       } @else {
         <h1 class="font-serif text-3xl text-primary italic tracking-wide text-center -ml-2">M</h1>
       }
@@ -45,7 +44,7 @@
   </div>
 
   <div class="overflow-hidden">
-    <button class="w-full py-3 rounded-lg bg-gradient-to-br from-primary to-primary-dim text-white font-medium shadow-[0_12px_30px_rgba(34,100,142,0.15)] hover:shadow-[0_16px_40px_rgba(34,100,142,0.25)] hover:-translate-y-0.5 transition-all flex items-center gap-2 whitespace-nowrap"
+    <button (click)="openModal.emit()" class="w-full py-3 rounded-lg bg-gradient-to-br from-primary to-primary-dim text-white font-medium shadow-[0_12px_30px_rgba(34,100,142,0.15)] hover:shadow-[0_16px_40px_rgba(34,100,142,0.25)] hover:-translate-y-0.5 transition-all flex items-center gap-2 whitespace-nowrap"
             [class.justify-center]="isExpanded"
             [class.px-0]="!isExpanded">
       <svg class="shrink-0" [class.ml-3]="!isExpanded" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="5" y2="19"/><line x1="5" x2="19" y1="12" y2="12"/></svg>

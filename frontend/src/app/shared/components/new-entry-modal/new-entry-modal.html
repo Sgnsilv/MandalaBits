@@ -1,0 +1,48 @@
+<div class="fixed inset-0 z-50 flex flex-col items-center justify-center bg-surface/80 backdrop-blur-md animate-in fade-in duration-300">
+  
+  <button (click)="close.emit()" class="absolute top-8 right-8 text-outline-variant hover:text-primary transition-colors p-2 cursor-pointer">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+  </button>
+
+  <div class="text-center mb-12">
+    <h2 class="font-serif text-5xl text-primary mb-4 italic tracking-tight">O que vamos criar hoje?</h2>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl w-full px-6">
+    
+    <div class="bg-surface-container-lowest p-8 rounded-2xl shadow-[0_12px_40px_rgba(34,100,142,0.08)] hover:-translate-y-2 hover:shadow-[0_16px_40px_rgba(34,100,142,0.15)] transition-all cursor-pointer group flex flex-col h-full">
+      <div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-primary mb-6 group-hover:bg-primary-fixed transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+      </div>
+      <h3 class="font-serif text-xl text-primary mb-3">Evento no<br>Calendário</h3>
+      <p class="font-sans text-sm text-outline-variant leading-relaxed">Agende compromissos, estudos ou tarefas importantes.</p>
+    </div>
+
+    <div class="bg-surface-container-lowest p-8 rounded-2xl shadow-[0_12px_40px_rgba(34,100,142,0.08)] hover:-translate-y-2 hover:shadow-[0_16px_40px_rgba(34,100,142,0.15)] transition-all cursor-pointer group flex flex-col h-full">
+      <div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-primary mb-6 group-hover:bg-primary-fixed transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+      </div>
+      <h3 class="font-serif text-xl text-primary mb-3">Novo<br>Hábito</h3>
+      <p class="font-sans text-sm text-outline-variant leading-relaxed">Inicie um novo ritual para cultivar sua rotina ideal.</p>
+    </div>
+
+    <div class="bg-surface-container-lowest p-8 rounded-2xl shadow-[0_12px_40px_rgba(34,100,142,0.08)] hover:-translate-y-2 hover:shadow-[0_16px_40px_rgba(34,100,142,0.15)] transition-all cursor-pointer group flex flex-col h-full">
+      <div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-primary mb-6 group-hover:bg-primary-fixed transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/><circle cx="12" cy="12" r="2"/></svg>
+      </div>
+      <h3 class="font-serif text-xl text-primary mb-3">Registro<br>Financeiro</h3>
+      <p class="font-sans text-sm text-outline-variant leading-relaxed">Controle entradas de freelas e despesas do ateliê.</p>
+    </div>
+
+    <div class="bg-surface-container-lowest p-8 rounded-2xl shadow-[0_12px_40px_rgba(34,100,142,0.08)] hover:-translate-y-2 hover:shadow-[0_16px_40px_rgba(34,100,142,0.15)] transition-all cursor-pointer group flex flex-col h-full">
+      <div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-primary mb-6 group-hover:bg-primary-fixed transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h10"/><path d="M9 4v16"/><path d="m3 9 3 3-3 3"/></svg>
+      </div>
+      <h3 class="font-serif text-xl text-primary mb-3">Nota no<br>Diário</h3>
+      <p class="font-sans text-sm text-outline-variant leading-relaxed">Capture pensamentos, reflexões ou rascunhos rápidos.</p>
+    </div>
+
+  </div>
+
+
+</div>
